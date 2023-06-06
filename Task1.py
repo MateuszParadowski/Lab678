@@ -1,5 +1,5 @@
-#parsowanie argumentów przekazywanych przy uruchomieniu programu
 #!/usr/bin/python
+#parsowanie argumentów przekazywanych przy uruchomieniu programu
 import argparse
 parser = argparse.ArgumentParser(description='Tutaj możemy podać zwięzły opis naszego skryptu')
 parser.add_argument('filename', help="Opis tego argumentu (krótkie wyjaśnienie co przyjmuje) - tutaj uznajmy że nazwę pliku")
