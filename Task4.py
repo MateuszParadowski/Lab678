@@ -1,9 +1,16 @@
 #!/usr/bin/python
 #wczytywanie do obiektu z pliku .yaml i weryfikacja poprawności składni pliku
+import sys
 import yaml
-def open_yaml('pathFile2.yaml'):
+if len(sys.argv) != 2:
+        print("Dozwolony jest tylko jeden argument")
+        return
+    else:
+        pass
+open_file = sys.argv
+def open_yaml(open_file):
     try:
-        with open('pathFile2.yaml', 'r') as plik:
+        with open(open_file, 'r') as plik:
             a = yaml.safe_load(plik)
             return a
     except yaml.YAMLError:
