@@ -1,5 +1,5 @@
-#wczytywanie do obiektu z pliku .json i weryfikacja poprawności składni pliku
 #!/usr/bin/python
+#wczytywanie do obiektu z pliku .json i weryfikacja poprawności składni pliku
 import json
 def open_json('pathFile1.json'):
     try:
