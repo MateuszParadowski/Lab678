@@ -8,6 +8,7 @@ if len(sys.argv) != 2:
     else:
         pass
 open_file = sys.argv
+a = None
 def open_json(open_file):
     try:
         with open(open_file, 'r') as plik:
