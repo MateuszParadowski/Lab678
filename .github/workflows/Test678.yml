@@ -1,22 +1,52 @@
-name: Testowanie aplikacji z installResources.py
+name: Testowanie aplikacji z installResources.sh
 on:
   push:
       branches:
         - master
   schedule:
     - cron: '0 15 * * 3' # odpala się co środę o 15
-  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
-permissions:
-  contents: write # To write the generated contents to the readme
+  workflow_dispatch:
 
 jobs:
-  update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
-    runs-on: ubuntu-latest
+  build:
+
+    runs-on: windows-latest #utsawienie domyslnego serwera na windows
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Pull in dev.to posts
-        uses: gautamkrishnar/blog-post-workflow@v1
-        with:
-          feed_list: "https://dev.to/feed/gautamkrishnar,https://www.gautamkrishnar.com/feed/"
+    - name: Sprawdzenie repozytoriumm
+      uses: actions/checkout@v3
+    
+    - name: Setup Pythona
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+        
+    - name: Instalacja wymaganych bibliotek
+      run: bash installResources.sh
+      
+    - name: Odpalenie pierwszego skryptu
+      run: python Task1.py
+      
+    - name: Odpalenie drugiego skryptu
+      run: python Task2.py
+    
+    - name: Odpalenie trzeciego skryptu
+      run: python Task3.py
+    
+    - name: Odpalenie czwartego skryptu
+      run: python Task4.py
+    
+    - name: Odpalenie piątego skryptu
+      run: python Task5.py
+    
+    - name: Odpalenie szóstego skryptu
+      run: python Task6.py
+      
+    - name: Odpalenie ostatniego skryptu
+      run: python Task7.py  
+    
+    - name: Przesyłanie utworzonego pliku
+      uses: actions/upload-artifact@v3
+      with:
+        name: newpyinstaller.exe
+        path: ${{ github.workspace }}/newpyinstaller.exe
