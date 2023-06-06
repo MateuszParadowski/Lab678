@@ -1,5 +1,5 @@
-#zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .json
 #!/usr/bin/python
+#zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .json
 import json
 def save_json(a, 'pathFile1.json'):
     try:
