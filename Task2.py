@@ -1,7 +1,11 @@
 #!/usr/bin/python
 import json
-plik=open('pathFile1.json',encoding='utf-8')
-obj=json.load(plik)
-print(obj)
-print(type(obj))
-plik.close()
+def podaj_plik_json(plik_wej):
+    try:
+        with open(plik_wej, 'r') as plik:
+            a = json.load(plik)
+            return a
+    except json.JSONDecodeError:
+        print("Taki plik nie istnieje, sprawdź nazwę")
+    except FileNotFoundError:
+        print("Taki plik nie istnieje")
