@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<books>
+  <book>
+    <title>Krótka historia czasu</title>
+    <author>Stephen Hawking</author>
+    <publisher>Zysk i S-ka</publisher>
+    <publication_date>2015</publication_date>
+    <chapters>
+      <chapter number="1">
+        <title>Nasz obraz Wszechświata</title>
+        <page>13</page>
+      </chapter>
+      <chapter number="2">
+        <title>Czas i przestrzeń</title>
+        <page>25</page>
+      </chapter>
+    </chapters>
+  </book>
+  <book>
+    <title>Filozofia kosmologii</title>
+    <author>Michał Heller</author>
+    <publisher>Copernicus Center Press</publisher>
+    <publication_date>2013</publication_date>
+    <chapters>
+      <chapter number="1">
+        <title>Kosmologia przed Einsteinem</title>
+        <page>13</page>
+      </chapter>
+      <chapter number="2">
+        <title>Kosmologia 1917-1965</title>
+        <page>39</page>
+      </chapter>
+    </chapters>
+  </book>
+</books>

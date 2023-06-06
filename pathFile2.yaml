@@ -1,0 +1,15 @@
+---
+ focus: "Samochód, model Forda "
+ saturn: "Planeta w układzie słonecznym"
+ powierzchnia: 510,22
+ ocean: true
+ Dni: 5
+ Waluty:
+   - dolar
+   - złotówka
+   - euro
+   - funt
+ wakacje:
+   transport: samolot
+   nocleg: hotel
+   posiłki: "na miejscu"
