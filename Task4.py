@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#wczytywanie do obiektu z pliku .yml i weryfikacja poprawności składni pliku
+#wczytywanie do obiektu z pliku .yaml i weryfikacja poprawności składni pliku
 import yaml
 def open_yaml('pathFile2.yaml'):
     try:
