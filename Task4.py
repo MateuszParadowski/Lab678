@@ -1,24 +1,14 @@
 #!/usr/bin/python
+#wczytywanie do obiektu z pliku .yml i weryfikacja poprawności składni pliku
 import yaml
-
-yaml_file = """
----
- focus: "Samochód, model Forda "
- saturn: "Planeta w układzie słonecznym"
- powierzchnia: 510,22
- ocean: true
- Dni: 5
- Waluty:
-   - dolar
-   - złotówka
-   - euro
-   - funt
- wakacje:
-   transport: samolot
-   nocleg: hotel
-   posiłki: "na miejscu"
-"""
-
-x = yaml.load(yaml_file)
-print(x)
-print(type(x))
+def open_yaml('pathFile2.yaml'):
+    try:
+        with open('pathFile2.yaml', 'r') as plik:
+            a = yaml.safe_load(plik)
+            return a
+    except yaml.YAMLError:
+        print("Taki plik nie istnieje, sprawdź nazwę")
+    except FileNotFoundError:
+        print("Taki plik nie istnieje")
+      else:
+       print("Taki plik istnieje")
