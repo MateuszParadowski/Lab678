@@ -1,8 +1,17 @@
 #!/usr/bin/python
 #zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .yaml
-def save_yaml(a, 'pathFile2.yaml'):
+import sys
+import yaml
+if len(sys.argv) != 2:
+        print("Dozwolony jest tylko jeden argument")
+        return
+    else:
+        pass
+save_file = sys.argv
+a = None
+def save_yaml(a, save_file):
     try:
-        with open('pathFile2.yaml', 'w') as plik:
+        with open(save_file, 'w') as plik:
             yaml.dump(a, plik)
         print("Udana konwersja do formatu YAML")
     except Exception:
