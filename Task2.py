@@ -1,9 +1,9 @@
 #wczytywanie do obiektu z pliku .json i weryfikacja poprawności składni pliku
 #!/usr/bin/python
 import json
-def open_json(open_file):
+def open_json('pathFile1.json'):
     try:
-        with open(open_file, 'r') as plik:
+        with open('pathFile1.json', 'r') as plik:
             a = json.load(plik)
             return a
     except json.JSONDecodeError:
