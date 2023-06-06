@@ -1,7 +1,9 @@
 #!/usr/bin/python
-import yaml
-
-dict_sample = {'info': {'description': 'text', 'list_example': ['one', 'two'], 'test_name': 'yaml_test', 'timeout': 100}, 'name': 'Config'}
-
-x = yaml.dump(dict_sample)
-print(x)
+#zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .yml
+def save_yaml(a, 'pathFile2.yaml'):
+    try:
+        with open('pathFile2.yaml', 'w') as plik:
+            yaml.dump(a, plik)
+        print("Udana konwersja do formatu YAML")
+    except Exception:
+        print("Błąd")
