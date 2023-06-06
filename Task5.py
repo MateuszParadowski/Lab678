@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .yml
+#zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .yaml
 def save_yaml(a, 'pathFile2.yaml'):
     try:
         with open('pathFile2.yaml', 'w') as plik:
