@@ -1,3 +1,4 @@
+#parsowanie argumentów przekazywanych przy uruchomieniu programu
 #!/usr/bin/python
 import argparse
 parser = argparse.ArgumentParser(description='Tutaj możemy podać zwięzły opis naszego skryptu')
