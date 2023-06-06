@@ -1,3 +1,4 @@
+#wczytywanie do obiektu z pliku .json i weryfikacja poprawności składni pliku
 #!/usr/bin/python
 import json
 def podaj_plik_json(plik_wej):
