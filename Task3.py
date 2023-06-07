@@ -2,11 +2,12 @@
 #zapis danych z obiektu do pliku w formacie i zgodnie ze składnią .json
 import sys
 import json
-if len(sys.argv) != 2:
-        print("Dozwolony jest tylko jeden argument")
-        return
-    else:
-        pass
+def main():
+        if len(sys.argv) != 2:
+                print("Dozwolony jest tylko jeden argument")
+                return
+        else:
+                pass
 save_file = sys.argv
 a = None
 def save_json(a, save_file):
