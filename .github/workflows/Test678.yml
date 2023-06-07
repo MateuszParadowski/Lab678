@@ -24,26 +24,8 @@ jobs:
     - name: Instalacja wymaganych bibliotek
       run: bash installResources.sh
       
-    - name: Odpalenie pierwszego skryptu
-      run: python Task1.py
-      
-    - name: Odpalenie drugiego skryptu
-      run: python Task2.py
-    
-    - name: Odpalenie trzeciego skryptu
-      run: python Task3.py
-    
-    - name: Odpalenie czwartego skryptu
-      run: python Task4.py
-    
-    - name: Odpalenie piątego skryptu
-      run: python Task5.py
-    
-    - name: Odpalenie szóstego skryptu
-      run: python Task6.py
-      
-    - name: Odpalenie ostatniego skryptu
-      run: python Task7.py  
+    - name: Odpalenie skryptu
+      run: python wszystkietaski.py
     
     - name: Przesyłanie utworzonego pliku
       uses: actions/upload-artifact@v3
