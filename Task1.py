@@ -1,11 +1,12 @@
 #!/usr/bin/python
 #parsowanie argumentów przekazywanych przy uruchomieniu programu
 import sys
-if len(sys.argv) != 3:
-        print("Dozwolone sa tylko dwa argumenty")
-        return
-else:
-        pass
+def main():
+        if len(sys.argv) != 3:
+                print("Dozwolone sa tylko dwa argumenty")
+                return
+        else:
+                pass
 
 open_file = sys.argv[1]
 save_file = sys.argv[2]
