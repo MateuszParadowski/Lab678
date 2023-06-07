@@ -2,11 +2,12 @@
 #wczytywanie do obiektu z pliku .xml i weryfikacja poprawności składni pliku
 import sys
 import xmltodict
-if len(sys.argv) != 2:
-        print("Dozwolony jest tylko jeden argument")
-        return
-    else:
-        pass
+def main():
+        if len(sys.argv) != 2:
+                print("Dozwolony jest tylko jeden argument")
+                return
+        else:
+                pass
 open_file = sys.argv
 a = None
 def open_xml(open_file):
