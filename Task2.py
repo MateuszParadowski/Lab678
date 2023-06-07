@@ -2,11 +2,12 @@
 #wczytywanie do obiektu z pliku .json i weryfikacja poprawności składni pliku
 import sys
 import json
-if len(sys.argv) != 2:
-        print("Dozwolony jest tylko jeden argument")
-        return
-    else:
-        pass
+def main():
+        if len(sys.argv) != 2:
+                print("Dozwolony jest tylko jeden argument")
+                return
+        else:
+                pass
 open_file = sys.argv
 a = None
 def open_json(open_file):
