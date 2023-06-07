@@ -16,7 +16,7 @@ if open_file.endswith('.json'):
         a = open_json(open_file)
 elif open_file.endswith('.yaml'):
         a = open_yaml(open_file)
-elif plik_wej.endswith('.xml'):
+elif open_file.endswith('.xml'):
         a = open_xml(open_file)
 else:
         print("Błędny format pliku.")
@@ -24,9 +24,9 @@ else:
 
 if save_file.endswith('.json'):
         save_json(a, save_file)
-elif plik_wyj.endswith('.yaml'):
+elif save_file.endswith('.yaml'):
         save_yaml(a, save_file)
-elif plik_wyj.endswith('.xml'):
+elif save_file.endswith('.xml'):
         save_xml(a, save_file)
 else:
         print("Błędny format pliku.")
